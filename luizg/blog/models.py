@@ -24,6 +24,9 @@ class Post(models.Model):
   status = PublishedMgr()
 
   content = models.TextField()
+  
+  tags = models.TextField(default="")
+  likes = models.PositiveIntegerField(default=0)
 
   createdAt = models.DateTimeField(auto_now_add=True)
   updatedAt = models.DateTimeField(auto_now=True)
