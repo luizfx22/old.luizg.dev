@@ -1,13 +1,29 @@
 {% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
 {% block title %} LuizG - Blog {% endblock title %}
+{% block custom_style %}
+  <link rel="stylesheet" href="{% static 'css/blog/style.css' %}">
+{% endblock custom_style %}
 {% block content %}
-<main>
-  <h1>Blog</h1>
-  <h2>Top new posts!</h2>
-  {% for post in object_list %}
-    <h3>{{post.title}}</h3>
-    <p>{{post.content}}</p>
-    <br>
-  {% endfor %}
-</main>
+<section class="container blog-container">
+  <div class="blog-header">
+    <h3>{% trans "Blog" %}</h3>
+    <h4>{% trans "Top posts!" %}</h4>
+  </div>
+  <div class="blog-posts">
+    <ul class="list-unstyled">
+      {% for post in object_list %}
+        <li class="media">
+          <div class="media-body">
+            <h5 class="mt-0">{{ post.title }}</h5>
+            <p>{{ post.content }}</p>
+            <p class="post-date">Publicado por <b>{{ post.author }}</b> em: <b>{{ post.createdAt }}</b></p>
+          </div>
+        </li>
+        <hr>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
 {% endblock content %}
