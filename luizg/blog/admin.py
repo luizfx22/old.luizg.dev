@@ -9,4 +9,4 @@ class PostAdmin(admin.ModelAdmin):
   raw_id_fields = ['author']
   date_hierarchy = 'createdAt'
   search_fields = ['title', 'content']
-  prepopulated_fields = {'slug': ['title']}
+  prepopulated_fields = {'slug': ['title', 'author']}

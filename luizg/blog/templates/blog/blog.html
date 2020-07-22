@@ -13,12 +13,16 @@
   </div>
   <div class="blog-posts">
     <ul class="list-unstyled">
-      {% for post in object_list %}
+      <hr>
+      {% for post in posts %}
         <li class="media">
           <div class="media-body">
-            <h5 class="mt-0">{{ post.title }}</h5>
+            <a class="mt-0 fs-22 post-title-link" href="{{ post.get_absolute_url }}"><b>{{ post.title }}</b></a>
             <p>{{ post.content }}</p>
-            <p class="post-date">Publicado por <b>{{ post.author }}</b> em: <b>{{ post.createdAt }}</b></p>
+            <p>
+              <span class="post-likes">{{ post.likes }} likes</span>
+              <span class="post-date">{% trans "Published by" %} <b>{{ post.author }}</b> {% trans "em:" %} <b>{{ post.createdAt }}</b></span>
+            </p>
           </div>
         </li>
         <hr>
