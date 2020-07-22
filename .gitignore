@@ -1,3 +1,5 @@
 /Lib
 /pyvenv.cfg
 /Scripts
+
+*.pyc
