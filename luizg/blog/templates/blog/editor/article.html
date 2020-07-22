@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %} LuizG - Blog : {{ post.title }} {% endblock title %}
+{% block custom_style %}
+  <link rel="stylesheet" href="{% static 'css/blog/post.css' %}">
+{% endblock custom_style %}
+{% block content %}
+<section class="container blog-container" id="app">
+  <p>${text}</p>
+  <input type="text" v-model="text">
+</section>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+const vue = new Vue({
+  el: '#app',
+  delimiters: ['${', '}'],
+  data: {
+    text: "Leoo"
+  }
+})
+</script>
+{% endblock content %}

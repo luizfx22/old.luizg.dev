@@ -364,3 +364,12 @@
 .fs-100 {
   font-size: 100px !important;
 }
+
+/* POSITIONING HELPERS */
+.fr, .float-right {
+  float: right !important;
+}
+
+.fl, .float-left {
+  float: left !important;
+}

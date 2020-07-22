@@ -8,8 +8,17 @@
 {% block content %}
 <section class="container blog-container">
   <div class="blog-header">
-    <h3>{% trans "Blog" %}</h3>
-    <h4>{% trans "Top posts!" %}</h4>
+    <div class="row">
+      <div class="col">
+        <h3>{% trans "Blog" %}</h3>
+        <h4>{% trans "All posts!" %}</h4>
+      </div>
+      <div class="col col-lg-2 fr">
+        <a class="btn btn-info" style="color: #fff" href="{% url 'new_blog_post' %}">
+          <i class="mdi mdi-plus"></i> {% trans "New Post" %}
+        </a>
+      </div>
+    </div>
   </div>
   <div class="blog-posts">
     <ul class="list-unstyled">
