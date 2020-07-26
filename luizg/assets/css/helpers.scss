@@ -1,0 +1,6 @@
+/* FONT-SIZE Helpers*/
+@for $i from 0 through 150 {
+  .fts-#{$i}, .font-size-#{$i} {
+    font-size: #{$i + 'pt !important'};
+  }
+}

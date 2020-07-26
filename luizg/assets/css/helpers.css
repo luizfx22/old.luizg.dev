@@ -1,375 +1,605 @@
-/* HELPER CLASSES */
+/* FONT-SIZE Helpers*/
+.fts-0, .font-size-0 {
+  font-size: 0pt !important;
+}
+
+.fts-1, .font-size-1 {
+  font-size: 1pt !important;
+}
+
+.fts-2, .font-size-2 {
+  font-size: 2pt !important;
+}
+
+.fts-3, .font-size-3 {
+  font-size: 3pt !important;
+}
+
+.fts-4, .font-size-4 {
+  font-size: 4pt !important;
+}
+
+.fts-5, .font-size-5 {
+  font-size: 5pt !important;
+}
+
+.fts-6, .font-size-6 {
+  font-size: 6pt !important;
+}
+
+.fts-7, .font-size-7 {
+  font-size: 7pt !important;
+}
+
+.fts-8, .font-size-8 {
+  font-size: 8pt !important;
+}
+
+.fts-9, .font-size-9 {
+  font-size: 9pt !important;
+}
+
+.fts-10, .font-size-10 {
+  font-size: 10pt !important;
+}
+
+.fts-11, .font-size-11 {
+  font-size: 11pt !important;
+}
+
+.fts-12, .font-size-12 {
+  font-size: 12pt !important;
+}
+
+.fts-13, .font-size-13 {
+  font-size: 13pt !important;
+}
+
+.fts-14, .font-size-14 {
+  font-size: 14pt !important;
+}
+
+.fts-15, .font-size-15 {
+  font-size: 15pt !important;
+}
+
+.fts-16, .font-size-16 {
+  font-size: 16pt !important;
+}
+
+.fts-17, .font-size-17 {
+  font-size: 17pt !important;
+}
+
+.fts-18, .font-size-18 {
+  font-size: 18pt !important;
+}
+
+.fts-19, .font-size-19 {
+  font-size: 19pt !important;
+}
+
+.fts-20, .font-size-20 {
+  font-size: 20pt !important;
+}
+
+.fts-21, .font-size-21 {
+  font-size: 21pt !important;
+}
+
+.fts-22, .font-size-22 {
+  font-size: 22pt !important;
+}
+
+.fts-23, .font-size-23 {
+  font-size: 23pt !important;
+}
+
+.fts-24, .font-size-24 {
+  font-size: 24pt !important;
+}
+
+.fts-25, .font-size-25 {
+  font-size: 25pt !important;
+}
+
+.fts-26, .font-size-26 {
+  font-size: 26pt !important;
+}
+
+.fts-27, .font-size-27 {
+  font-size: 27pt !important;
+}
+
+.fts-28, .font-size-28 {
+  font-size: 28pt !important;
+}
+
+.fts-29, .font-size-29 {
+  font-size: 29pt !important;
+}
+
+.fts-30, .font-size-30 {
+  font-size: 30pt !important;
+}
+
+.fts-31, .font-size-31 {
+  font-size: 31pt !important;
+}
+
+.fts-32, .font-size-32 {
+  font-size: 32pt !important;
+}
+
+.fts-33, .font-size-33 {
+  font-size: 33pt !important;
+}
+
+.fts-34, .font-size-34 {
+  font-size: 34pt !important;
+}
+
+.fts-35, .font-size-35 {
+  font-size: 35pt !important;
+}
+
+.fts-36, .font-size-36 {
+  font-size: 36pt !important;
+}
+
+.fts-37, .font-size-37 {
+  font-size: 37pt !important;
+}
+
+.fts-38, .font-size-38 {
+  font-size: 38pt !important;
+}
+
+.fts-39, .font-size-39 {
+  font-size: 39pt !important;
+}
+
+.fts-40, .font-size-40 {
+  font-size: 40pt !important;
+}
+
+.fts-41, .font-size-41 {
+  font-size: 41pt !important;
+}
+
+.fts-42, .font-size-42 {
+  font-size: 42pt !important;
+}
+
+.fts-43, .font-size-43 {
+  font-size: 43pt !important;
+}
+
+.fts-44, .font-size-44 {
+  font-size: 44pt !important;
+}
+
+.fts-45, .font-size-45 {
+  font-size: 45pt !important;
+}
+
+.fts-46, .font-size-46 {
+  font-size: 46pt !important;
+}
+
+.fts-47, .font-size-47 {
+  font-size: 47pt !important;
+}
+
+.fts-48, .font-size-48 {
+  font-size: 48pt !important;
+}
+
+.fts-49, .font-size-49 {
+  font-size: 49pt !important;
+}
+
+.fts-50, .font-size-50 {
+  font-size: 50pt !important;
+}
+
+.fts-51, .font-size-51 {
+  font-size: 51pt !important;
+}
+
+.fts-52, .font-size-52 {
+  font-size: 52pt !important;
+}
+
+.fts-53, .font-size-53 {
+  font-size: 53pt !important;
+}
+
+.fts-54, .font-size-54 {
+  font-size: 54pt !important;
+}
+
+.fts-55, .font-size-55 {
+  font-size: 55pt !important;
+}
+
+.fts-56, .font-size-56 {
+  font-size: 56pt !important;
+}
+
+.fts-57, .font-size-57 {
+  font-size: 57pt !important;
+}
 
-/* FONT-SIZE */
-.fs-10 {
-  font-size: 10px !important;
+.fts-58, .font-size-58 {
+  font-size: 58pt !important;
 }
 
-.fs-11 {
-  font-size: 11px !important;
+.fts-59, .font-size-59 {
+  font-size: 59pt !important;
 }
 
-.fs-12 {
-  font-size: 12px !important;
+.fts-60, .font-size-60 {
+  font-size: 60pt !important;
 }
 
-.fs-13 {
-  font-size: 13px !important;
+.fts-61, .font-size-61 {
+  font-size: 61pt !important;
 }
 
-.fs-14 {
-  font-size: 14px !important;
+.fts-62, .font-size-62 {
+  font-size: 62pt !important;
 }
 
-.fs-15 {
-  font-size: 15px !important;
+.fts-63, .font-size-63 {
+  font-size: 63pt !important;
 }
 
-.fs-16 {
-  font-size: 16px !important;
+.fts-64, .font-size-64 {
+  font-size: 64pt !important;
 }
 
-.fs-17 {
-  font-size: 17px !important;
+.fts-65, .font-size-65 {
+  font-size: 65pt !important;
 }
 
-.fs-18 {
-  font-size: 18px !important;
+.fts-66, .font-size-66 {
+  font-size: 66pt !important;
 }
 
-.fs-19 {
-  font-size: 19px !important;
+.fts-67, .font-size-67 {
+  font-size: 67pt !important;
 }
 
-.fs-20 {
-  font-size: 20px !important;
+.fts-68, .font-size-68 {
+  font-size: 68pt !important;
 }
 
-.fs-21 {
-  font-size: 21px !important;
+.fts-69, .font-size-69 {
+  font-size: 69pt !important;
 }
 
-.fs-22 {
-  font-size: 22px !important;
+.fts-70, .font-size-70 {
+  font-size: 70pt !important;
 }
 
-.fs-23 {
-  font-size: 23px !important;
+.fts-71, .font-size-71 {
+  font-size: 71pt !important;
 }
 
-.fs-24 {
-  font-size: 24px !important;
+.fts-72, .font-size-72 {
+  font-size: 72pt !important;
 }
 
-.fs-25 {
-  font-size: 25px !important;
+.fts-73, .font-size-73 {
+  font-size: 73pt !important;
 }
 
-.fs-26 {
-  font-size: 26px !important;
+.fts-74, .font-size-74 {
+  font-size: 74pt !important;
 }
 
-.fs-27 {
-  font-size: 27px !important;
+.fts-75, .font-size-75 {
+  font-size: 75pt !important;
 }
 
-.fs-28 {
-  font-size: 28px !important;
+.fts-76, .font-size-76 {
+  font-size: 76pt !important;
 }
 
-.fs-29 {
-  font-size: 29px !important;
+.fts-77, .font-size-77 {
+  font-size: 77pt !important;
 }
 
-.fs-30 {
-  font-size: 30px !important;
+.fts-78, .font-size-78 {
+  font-size: 78pt !important;
 }
 
-.fs-31 {
-  font-size: 31px !important;
+.fts-79, .font-size-79 {
+  font-size: 79pt !important;
 }
 
-.fs-32 {
-  font-size: 32px !important;
+.fts-80, .font-size-80 {
+  font-size: 80pt !important;
 }
 
-.fs-33 {
-  font-size: 33px !important;
+.fts-81, .font-size-81 {
+  font-size: 81pt !important;
 }
 
-.fs-34 {
-  font-size: 34px !important;
+.fts-82, .font-size-82 {
+  font-size: 82pt !important;
 }
 
-.fs-35 {
-  font-size: 35px !important;
+.fts-83, .font-size-83 {
+  font-size: 83pt !important;
 }
 
-.fs-36 {
-  font-size: 36px !important;
+.fts-84, .font-size-84 {
+  font-size: 84pt !important;
 }
 
-.fs-37 {
-  font-size: 37px !important;
+.fts-85, .font-size-85 {
+  font-size: 85pt !important;
 }
 
-.fs-38 {
-  font-size: 38px !important;
+.fts-86, .font-size-86 {
+  font-size: 86pt !important;
 }
 
-.fs-39 {
-  font-size: 39px !important;
+.fts-87, .font-size-87 {
+  font-size: 87pt !important;
 }
 
-.fs-40 {
-  font-size: 40px !important;
+.fts-88, .font-size-88 {
+  font-size: 88pt !important;
 }
 
-.fs-41 {
-  font-size: 41px !important;
+.fts-89, .font-size-89 {
+  font-size: 89pt !important;
 }
 
-.fs-42 {
-  font-size: 42px !important;
+.fts-90, .font-size-90 {
+  font-size: 90pt !important;
 }
 
-.fs-43 {
-  font-size: 43px !important;
+.fts-91, .font-size-91 {
+  font-size: 91pt !important;
 }
 
-.fs-44 {
-  font-size: 44px !important;
+.fts-92, .font-size-92 {
+  font-size: 92pt !important;
 }
 
-.fs-45 {
-  font-size: 45px !important;
+.fts-93, .font-size-93 {
+  font-size: 93pt !important;
 }
 
-.fs-46 {
-  font-size: 46px !important;
+.fts-94, .font-size-94 {
+  font-size: 94pt !important;
 }
 
-.fs-47 {
-  font-size: 47px !important;
+.fts-95, .font-size-95 {
+  font-size: 95pt !important;
 }
 
-.fs-48 {
-  font-size: 48px !important;
+.fts-96, .font-size-96 {
+  font-size: 96pt !important;
 }
 
-.fs-49 {
-  font-size: 49px !important;
+.fts-97, .font-size-97 {
+  font-size: 97pt !important;
 }
 
-.fs-50 {
-  font-size: 50px !important;
+.fts-98, .font-size-98 {
+  font-size: 98pt !important;
 }
 
-.fs-51 {
-  font-size: 51px !important;
+.fts-99, .font-size-99 {
+  font-size: 99pt !important;
 }
 
-.fs-52 {
-  font-size: 52px !important;
+.fts-100, .font-size-100 {
+  font-size: 100pt !important;
 }
 
-.fs-53 {
-  font-size: 53px !important;
+.fts-101, .font-size-101 {
+  font-size: 101pt !important;
 }
 
-.fs-54 {
-  font-size: 54px !important;
+.fts-102, .font-size-102 {
+  font-size: 102pt !important;
 }
 
-.fs-55 {
-  font-size: 55px !important;
+.fts-103, .font-size-103 {
+  font-size: 103pt !important;
 }
 
-.fs-56 {
-  font-size: 56px !important;
+.fts-104, .font-size-104 {
+  font-size: 104pt !important;
 }
 
-.fs-57 {
-  font-size: 57px !important;
+.fts-105, .font-size-105 {
+  font-size: 105pt !important;
 }
 
-.fs-58 {
-  font-size: 58px !important;
+.fts-106, .font-size-106 {
+  font-size: 106pt !important;
 }
 
-.fs-59 {
-  font-size: 59px !important;
+.fts-107, .font-size-107 {
+  font-size: 107pt !important;
 }
 
-.fs-60 {
-  font-size: 60px !important;
+.fts-108, .font-size-108 {
+  font-size: 108pt !important;
 }
 
-.fs-61 {
-  font-size: 61px !important;
+.fts-109, .font-size-109 {
+  font-size: 109pt !important;
 }
 
-.fs-62 {
-  font-size: 62px !important;
+.fts-110, .font-size-110 {
+  font-size: 110pt !important;
 }
 
-.fs-63 {
-  font-size: 63px !important;
+.fts-111, .font-size-111 {
+  font-size: 111pt !important;
 }
 
-.fs-64 {
-  font-size: 64px !important;
+.fts-112, .font-size-112 {
+  font-size: 112pt !important;
 }
 
-.fs-65 {
-  font-size: 65px !important;
+.fts-113, .font-size-113 {
+  font-size: 113pt !important;
 }
 
-.fs-66 {
-  font-size: 66px !important;
+.fts-114, .font-size-114 {
+  font-size: 114pt !important;
 }
 
-.fs-67 {
-  font-size: 67px !important;
+.fts-115, .font-size-115 {
+  font-size: 115pt !important;
 }
 
-.fs-68 {
-  font-size: 68px !important;
+.fts-116, .font-size-116 {
+  font-size: 116pt !important;
 }
 
-.fs-69 {
-  font-size: 69px !important;
+.fts-117, .font-size-117 {
+  font-size: 117pt !important;
 }
 
-.fs-70 {
-  font-size: 70px !important;
+.fts-118, .font-size-118 {
+  font-size: 118pt !important;
 }
 
-.fs-71 {
-  font-size: 71px !important;
+.fts-119, .font-size-119 {
+  font-size: 119pt !important;
 }
 
-.fs-72 {
-  font-size: 72px !important;
+.fts-120, .font-size-120 {
+  font-size: 120pt !important;
 }
 
-.fs-73 {
-  font-size: 73px !important;
+.fts-121, .font-size-121 {
+  font-size: 121pt !important;
 }
 
-.fs-74 {
-  font-size: 74px !important;
+.fts-122, .font-size-122 {
+  font-size: 122pt !important;
 }
 
-.fs-75 {
-  font-size: 75px !important;
+.fts-123, .font-size-123 {
+  font-size: 123pt !important;
 }
 
-.fs-76 {
-  font-size: 76px !important;
+.fts-124, .font-size-124 {
+  font-size: 124pt !important;
 }
 
-.fs-77 {
-  font-size: 77px !important;
+.fts-125, .font-size-125 {
+  font-size: 125pt !important;
 }
 
-.fs-78 {
-  font-size: 78px !important;
+.fts-126, .font-size-126 {
+  font-size: 126pt !important;
 }
 
-.fs-79 {
-  font-size: 79px !important;
+.fts-127, .font-size-127 {
+  font-size: 127pt !important;
 }
 
-.fs-80 {
-  font-size: 80px !important;
+.fts-128, .font-size-128 {
+  font-size: 128pt !important;
 }
 
-.fs-81 {
-  font-size: 81px !important;
+.fts-129, .font-size-129 {
+  font-size: 129pt !important;
 }
 
-.fs-82 {
-  font-size: 82px !important;
+.fts-130, .font-size-130 {
+  font-size: 130pt !important;
 }
 
-.fs-83 {
-  font-size: 83px !important;
+.fts-131, .font-size-131 {
+  font-size: 131pt !important;
 }
 
-.fs-84 {
-  font-size: 84px !important;
+.fts-132, .font-size-132 {
+  font-size: 132pt !important;
 }
 
-.fs-85 {
-  font-size: 85px !important;
+.fts-133, .font-size-133 {
+  font-size: 133pt !important;
 }
 
-.fs-86 {
-  font-size: 86px !important;
+.fts-134, .font-size-134 {
+  font-size: 134pt !important;
 }
 
-.fs-87 {
-  font-size: 87px !important;
+.fts-135, .font-size-135 {
+  font-size: 135pt !important;
 }
 
-.fs-88 {
-  font-size: 88px !important;
+.fts-136, .font-size-136 {
+  font-size: 136pt !important;
 }
 
-.fs-89 {
-  font-size: 89px !important;
+.fts-137, .font-size-137 {
+  font-size: 137pt !important;
 }
 
-.fs-90 {
-  font-size: 90px !important;
+.fts-138, .font-size-138 {
+  font-size: 138pt !important;
 }
 
-.fs-91 {
-  font-size: 91px !important;
+.fts-139, .font-size-139 {
+  font-size: 139pt !important;
 }
 
-.fs-92 {
-  font-size: 92px !important;
+.fts-140, .font-size-140 {
+  font-size: 140pt !important;
 }
 
-.fs-93 {
-  font-size: 93px !important;
+.fts-141, .font-size-141 {
+  font-size: 141pt !important;
 }
 
-.fs-94 {
-  font-size: 94px !important;
+.fts-142, .font-size-142 {
+  font-size: 142pt !important;
 }
 
-.fs-95 {
-  font-size: 95px !important;
+.fts-143, .font-size-143 {
+  font-size: 143pt !important;
 }
 
-.fs-96 {
-  font-size: 96px !important;
+.fts-144, .font-size-144 {
+  font-size: 144pt !important;
 }
 
-.fs-97 {
-  font-size: 97px !important;
+.fts-145, .font-size-145 {
+  font-size: 145pt !important;
 }
 
-.fs-98 {
-  font-size: 98px !important;
+.fts-146, .font-size-146 {
+  font-size: 146pt !important;
 }
 
-.fs-99 {
-  font-size: 99px !important;
+.fts-147, .font-size-147 {
+  font-size: 147pt !important;
 }
 
-.fs-100 {
-  font-size: 100px !important;
+.fts-148, .font-size-148 {
+  font-size: 148pt !important;
 }
 
-/* POSITIONING HELPERS */
-.fr, .float-right {
-  float: right !important;
+.fts-149, .font-size-149 {
+  font-size: 149pt !important;
 }
 
-.fl, .float-left {
-  float: left !important;
+.fts-150, .font-size-150 {
+  font-size: 150pt !important;
 }
+/*# sourceMappingURL=helpers.css.map */

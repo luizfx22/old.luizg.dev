@@ -1,5 +1,8 @@
 .quill-editor {
   margin-top: 60px;
   background: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
+/*# sourceMappingURL=post.css.map */

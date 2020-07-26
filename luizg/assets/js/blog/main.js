@@ -4,8 +4,6 @@ const vue = new Vue({
   el: '#app',
   delimiters: ['${', '}'],
   data: {
-    message: 'Hi from Vue.',
-    content: '<h2>Django with Vue, what could go wrong!?</h2>',
     editorOption: {
       theme: 'bubble',
       modules: {
@@ -20,17 +18,21 @@ const vue = new Vue({
           ['clean']
         ]
       }
+    },
+    blogPost: {
+      title: '',
+      content: ''
     }
   },
   methods: {
     onEditorBlur(quill) {
-      console.log('editor blur!', quill)
+      // console.log('editor blur!', quill)
     },
     onEditorFocus(quill) {
-      console.log('editor focus!', quill)
+      // console.log('editor focus!', quill)
     },
     onEditorReady(quill) {
-      console.log('editor ready!', quill)
+      // console.log('editor ready!', quill)
     }
   },
   created() {
