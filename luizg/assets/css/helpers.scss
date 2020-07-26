@@ -7,35 +7,43 @@
 
 /* Padding and margin Helpers*/
 @for $i from 0 through 1500 {
-  .pt-#{$i}, .padding-top-#{$i} {
+  .padding-top-#{$i} {
     padding-top: #{$i + 'px !important'};
   }
 
-  .pb-#{$i}, .padding-bottom-#{$i} {
+  .padding-bottom-#{$i} {
     padding-bottom: #{$i + 'px !important'};
   }
 
-  .pr-#{$i}, .padding-right-#{$i} {
+  .padding-right-#{$i} {
     padding-right: #{$i + 'px !important'};
   }
 
-  .pl-#{$i}, .padding-left-#{$i} {
+  .padding-left-#{$i} {
     padding-left: #{$i + 'px !important'};
   }
 
-  .mt-#{$i}, .margin-top-#{$i} {
+  .margin-top-#{$i} {
     margin-top: #{$i + 'px !important'};
   }
 
-  .mb-#{$i}, .margin-bottom-#{$i} {
+  .margin-bottom-#{$i} {
     margin-bottom: #{$i + 'px !important'};
   }
 
-  .mr-#{$i}, .margin-right-#{$i} {
+  .margin-right-#{$i} {
     margin-right: #{$i + 'px !important'};
   }
 
-  .ml-#{$i}, .margin-left-#{$i} {
+  .margin-left-#{$i} {
     margin-left: #{$i + 'px !important'};
   }
+}
+
+.float-right, .fr {
+  float: right !important;
+}
+
+.float-left, .fl {
+  float: left !important;
 }

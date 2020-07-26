@@ -15,7 +15,8 @@ var quill = new Quill('#editor', {
       [{ 'header': [2, false] }],
 
       ['clean']                                         // remove formatting button
-    ]
+    ],
+    syntax: true, 
   }
 });
 
