@@ -1,39 +1,34 @@
-Vue.use(VueQuillEditor)
+// Main stuff
+var quill = new Quill('#editor', {
+  theme: 'bubble',
+  placeholder: 'My awesome content',
+  modules: {
+    toolbar: [
+      ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+      ['blockquote', 'code-block'],
+      [{ 'header': 2 }],
+      [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+      [{ 'script': 'sub' }, { 'script': 'super' }],      // superscript/subscript
+      [{ 'indent': '-1' }, { 'indent': '+1' }],          // outdent/indent
+      [{ 'direction': 'rtl' }],                         // text direction
 
+      [{ 'header': [2, false] }],
+
+      ['clean']                                         // remove formatting button
+    ]
+  }
+});
+
+
+// Vue instance
 const vue = new Vue({
   el: '#app',
   delimiters: ['${', '}'],
   data: {
-    editorOption: {
-      theme: 'bubble',
-      modules: {
-        toolbar: [
-          ['bold', 'italic', 'underline', 'strike'],
-          [{ 'list': 'ordered' }, { 'list': 'bullet' }],
-          // [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-          [{ 'color': [] }, { 'background': [] }],
-          [{ 'font': ['serif'] }],
-          [{ 'align': [] }],
-          ['link', 'image'],
-          ['clean']
-        ]
-      }
-    },
-    blogPost: {
-      title: '',
-      content: ''
-    }
+    
   },
   methods: {
-    onEditorBlur(quill) {
-      // console.log('editor blur!', quill)
-    },
-    onEditorFocus(quill) {
-      // console.log('editor focus!', quill)
-    },
-    onEditorReady(quill) {
-      // console.log('editor ready!', quill)
-    }
+    
   },
   created() {
   }

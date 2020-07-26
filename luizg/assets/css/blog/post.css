@@ -1,8 +1,8 @@
-.quill-editor {
-  margin-top: 60px;
-  background: white;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
+.post-title-input { border: none !important; border-left: 1px solid #ccc !important; font-family: serif !important; font-size: 2.5rem !important; padding: 0 !important; padding-left: 9px !important; border-top-left-radius: 0px !important; border-bottom-left-radius: 0px !important; color: black !important; }
+
+.ql-editor { font-family: serif !important; font-size: 1.35rem; border-left: 1px solid #ccc !important; line-height: 1.6 !important; }
+
+.ql-editor p, h1, h2, h3, h4, h5, h6 { font-family: serif !important; }
+
+.ql-editor h2 { font-size: 1.29rem; }
 /*# sourceMappingURL=post.css.map */
