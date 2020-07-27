@@ -1,4 +1,4 @@
-.post-title-input { border: none !important; border-left: 1px solid #ccc !important; font-family: serif !important; font-size: 2.5rem !important; padding: 0 !important; padding-left: 9px !important; border-top-left-radius: 0px !important; border-bottom-left-radius: 0px !important; color: black !important; }
+.post-title-input { border: none !important; border-left: 1px solid #ccc !important; font-family: serif !important; font-size: 2.5rem !important; padding: 0 !important; padding-left: 9px !important; border-top-left-radius: 0px !important; border-bottom-left-radius: 0px !important; color: black !important; word-wrap: break-word; }
 
 .ql-editor { font-family: serif !important; font-size: 1.35rem; border-left: 1px solid #ccc !important; line-height: 1.6 !important; }
 

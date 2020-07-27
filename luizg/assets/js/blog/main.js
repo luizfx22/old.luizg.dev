@@ -16,21 +16,17 @@ var quill = new Quill('#editor', {
 
       ['clean']                                         // remove formatting button
     ],
-    syntax: true, 
+    syntax: false, 
   }
 });
 
+const articleFormPost = document.getElementById('article-form');
 
-// Vue instance
-const vue = new Vue({
-  el: '#app',
-  delimiters: ['${', '}'],
-  data: {
-    
-  },
-  methods: {
-    
-  },
-  created() {
-  }
-});
+articleFormPost.onsubmit = function (event) {
+  const contentInput = document.getElementById('content-input');
+  contentInput.value = quill.getContents();
+  console.log(quill.getContents());
+  return false;
+  event.preventDefault();
+
+}

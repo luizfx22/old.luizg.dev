@@ -13,11 +13,13 @@
         <h3>{% trans "Blog" %}</h3>
         <h4>{% trans "All posts!" %}</h4>
       </div>
-      <div class="col col-lg-2 fr">
-        <a class="btn btn-info" style="color: #fff" href="{% url 'new_blog_post' %}">
-          <i class="mdi mdi-plus"></i> {% trans "New Post" %}
-        </a>
-      </div>
+      {% if user.is_authenticated %}
+        <div class="col col-lg-2 fr">
+          <a class="btn btn-info" style="color: #fff" href="{% url 'new_blog_post' %}">
+            <i class="mdi mdi-plus"></i> {% trans "New Post" %}
+          </a>
+        </div>
+      {% endif %}
     </div>
   </div>
   <div class="blog-posts">

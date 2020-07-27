@@ -15,8 +15,7 @@ class BlogPost(DetailView):
   template_name = 'blog/post.html'
   context_object_name = 'post'
 
-
 class NewBlogPost(CreateView):
   model = Post
   template_name = 'blog/editor/article.html'
-  fields = ['title', 'content', 'published']
+  fields = '__all__'
