@@ -18,4 +18,4 @@ class BlogPost(DetailView):
 class NewBlogPost(CreateView):
   model = Post
   template_name = 'blog/editor/article.html'
-  fields = '__all__'
+  fields = ['text', 'title', 'author', 'published', 'slug']

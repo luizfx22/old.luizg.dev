@@ -24,13 +24,13 @@ class Post(models.Model):
   objects = models.Manager()
   status = PublishedMgr()
 
-  content = models.TextField()
+  text = models.TextField()
   
-  tags = models.TextField(default="")
+  tags = models.TextField(default="", null=True)
   likes = models.PositiveIntegerField(default=0)
 
-  createdAt = models.DateTimeField(auto_now_add=True)
-  updatedAt = models.DateTimeField(auto_now=True)
+  createdAt = models.DateTimeField(auto_now_add=True, null=True)
+  updatedAt = models.DateTimeField(auto_now=True, null=True)
 
   class Meta:
     ordering = ['-createdAt']
@@ -39,5 +39,5 @@ class Post(models.Model):
     return self.title
 
   def get_absolute_url(self):
-      return reverse("blog_post", args=[self.slug])
+    return reverse("blog_post", args=[self.slug])
   
