@@ -12,3 +12,6 @@
 
 # HTML files
 *.html   text
+
+# Ignoring files in luizg/assets/css/lib
+luizg/assets/css/lib/* linguist-vendored = false
