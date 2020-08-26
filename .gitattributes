@@ -10,12 +10,5 @@
 *.pyz    text diff=python
 *.pyi    text diff=python
 
-# Binary files
-# ============
-*.db     binary
-*.p      binary
-*.pkl    binary
-*.pickle binary
-*.pyc    binary
-*.pyd    binary
-*.pyo    binary
+# HTML files
+*.html   text
