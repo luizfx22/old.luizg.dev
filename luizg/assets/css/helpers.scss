@@ -1,0 +1,49 @@
+/* FONT-SIZE Helpers*/
+@for $i from 0 through 150 {
+  .fts-#{$i}, .font-size-#{$i} {
+    font-size: #{$i + 'pt !important'};
+  }
+}
+
+/* Padding and margin Helpers*/
+@for $i from 0 through 1500 {
+  .padding-top-#{$i} {
+    padding-top: #{$i + 'px !important'};
+  }
+
+  .padding-bottom-#{$i} {
+    padding-bottom: #{$i + 'px !important'};
+  }
+
+  .padding-right-#{$i} {
+    padding-right: #{$i + 'px !important'};
+  }
+
+  .padding-left-#{$i} {
+    padding-left: #{$i + 'px !important'};
+  }
+
+  .margin-top-#{$i} {
+    margin-top: #{$i + 'px !important'};
+  }
+
+  .margin-bottom-#{$i} {
+    margin-bottom: #{$i + 'px !important'};
+  }
+
+  .margin-right-#{$i} {
+    margin-right: #{$i + 'px !important'};
+  }
+
+  .margin-left-#{$i} {
+    margin-left: #{$i + 'px !important'};
+  }
+}
+
+.float-right, .fr {
+  float: right !important;
+}
+
+.float-left, .fl {
+  float: left !important;
+}

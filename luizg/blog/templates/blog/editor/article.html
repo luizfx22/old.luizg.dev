@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %} LuizG - Blog : {% trans "New post" %} {% endblock title %}
+{% block custom_style %}
+  <link rel="stylesheet" href="{% static 'css/blog/post.css' %}">
+{% endblock custom_style %}
+{% block content %}
+
+<section class="blog-container" id="app">
+  {% if user.is_authenticated %}
+    <div class="post-editor">
+      <form method="post" class="margin-top-10" id="article-form" prevent>{% csrf_token %}
+        <label for="published">Publish on save: </label>
+        <input type="checkbox" name="published" id="published" value="False">
+        <button type="submit" class="btn btn-primary margin-top-8 fr">Submit</button>
+        <div class="form-group margin-top-15">
+          <input 
+            name="title" type="text" required
+            class="form-control post-title-input" id="title-input" 
+            aria-describedby="titleInput" placeholder="My awesome title" 
+            autocomplete="off" onkeyup="generateSlug({{ user.id }})"
+          >
+        </div>
+        <div class="form-group margin-top-2 pb-5">
+          <div id="editor"></div>
+          <input type="hidden" name="text" id="content-input" required>
+        </div>
+        <input type="hidden" name="author" value="{{ user.id }}">
+        <input type="hidden" name="slug" id="slug-field">
+      </form>
+    </div>
+    <div class="media">
+      <img src="https://picsum.photos/64" class="mr-3 rounded-circle" alt="You brocks">
+      <div class="media-body">
+        <p class="mt-0 posted-by">{{ user|title }}</p>
+        <div class="share-container d-flex flex-row-reverse">
+          <i class="mdi mdi-bookmark-outline"></i>
+          <i class="mdi mdi-instagram pr-3 i-ig"></i>
+          <i class="mdi mdi-twitter pr-3 i-tw"></i>
+          <i class="mdi mdi-facebook pr-3 i-fb"></i>
+          {% comment %} <i class="mdi mdi-bookmark"></i> {% endcomment %}
+        </div>
+      </div>
+    </div>
+  {% else %}
+    <p>Not logged in</p>
+  {% endif %}
+</section>
+
+<!-- Quill -->
+<script src="https://cdn.quilljs.com/1.3.4/quill.js"></script>
+<link href="https://cdn.quilljs.com/1.3.4/quill.core.css" rel="stylesheet">
+<link href="https://cdn.quilljs.com/1.3.4/quill.snow.css" rel="stylesheet">
+<link href="https://cdn.quilljs.com/1.3.4/quill.bubble.css" rel="stylesheet">
+<!-- This should be the last to be included! -->
+<script src="{% static 'js/blog/main.js' %}"></script>
+{% endblock content %}
